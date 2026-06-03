@@ -1,9 +1,10 @@
 import axios from 'axios'
+import toast from 'react-hot-toast'
 
 const api = axios.create({
   baseURL: `${import.meta.env.VITE_API_URL || ''}/api`,
   headers: { 'Content-Type': 'application/json' },
-  timeout: 15000,
+  timeout: 60000,
 })
 
 // Adjunta el JWT en cada request
@@ -21,6 +22,9 @@ api.interceptors.response.use(
       localStorage.removeItem('token')
       localStorage.removeItem('user')
       window.location.href = '/login'
+    }
+    if (error.code === 'ECONNABORTED') {
+      toast.error('El servidor está iniciando, espera unos segundos e intenta de nuevo', { duration: 6000 })
     }
     return Promise.reject(error)
   }
