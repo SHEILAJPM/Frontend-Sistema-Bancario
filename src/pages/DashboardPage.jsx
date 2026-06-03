@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
+import { useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import {
   Wallet, TrendingUp, CheckCircle2,
@@ -24,20 +25,25 @@ export default function DashboardPage() {
   const [alertLoading, setAlertLoading] = useState(true)
   const [flujoLoading, setFlujoLoading] = useState(true)
 
-  useEffect(() => {
+  const location = useLocation()
+
+  const cargar = useCallback(() => {
+    setLoading(true)
+    setAlertLoading(true)
+    setFlujoLoading(true)
     getMetricas()
       .then(r => setMetricas(r.data))
       .finally(() => setLoading(false))
-
     getAlertasHoy()
       .then(r => setAlertas(r.data))
       .finally(() => setAlertLoading(false))
-
     getFlujoCaja()
       .then(r => setFlujoCaja(r.data))
       .catch(() => setFlujoCaja([]))
       .finally(() => setFlujoLoading(false))
   }, [])
+
+  useEffect(() => { cargar() }, [cargar, location.key])
 
   return (
     <div className={styles.page}>
