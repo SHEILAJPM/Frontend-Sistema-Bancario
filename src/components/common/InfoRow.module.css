@@ -1,0 +1,5 @@
+.row   { display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 0; border-bottom: 1px solid #f3f4f6; }
+.row:last-child { border-bottom: none; }
+.label { font-size: 0.8rem; color: #6b7280; }
+.value { font-size: 0.875rem; font-weight: 500; color: #111827; }
+.accent { color: #0ea5e9; font-weight: 700; }

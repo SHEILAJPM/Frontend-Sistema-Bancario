@@ -1,0 +1,187 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.pageTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--gray-900);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.pageSubtitle {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+
+.dateChip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--sky-50);
+  border: 1px solid var(--sky-200);
+  color: var(--sky-700);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.4rem 0.875rem;
+  border-radius: 99px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1rem;
+}
+
+.summaryCard {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+  align-self: start;
+}
+
+.summaryTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+}
+
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.summaryLabel {
+  font-size: 0.825rem;
+  color: var(--gray-500);
+}
+
+.summaryValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+
+.summaryValue.urgent {
+  color: var(--amber-500);
+}
+
+.divider {
+  height: 1px;
+  background: var(--gray-100);
+  margin: 0.375rem 0;
+}
+
+/* ── Resumen de intereses ─────────────────────────── */
+.interestSection {
+  margin-bottom: 1.5rem;
+}
+
+.interestTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.75rem;
+}
+
+.interestGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.interestCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid transparent;
+}
+
+.interestIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.interestLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.interestValue {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.interestBlue  { background: #eff6ff; border-color: #bfdbfe; }
+.interestBlue .interestIcon  { background: #dbeafe; color: #2563eb; }
+.interestBlue .interestLabel { color: #3b82f6; }
+.interestBlue .interestValue { color: #1d4ed8; }
+
+.interestGreen  { background: #f0fdf4; border-color: #bbf7d0; }
+.interestGreen .interestIcon  { background: #dcfce7; color: #16a34a; }
+.interestGreen .interestLabel { color: #22c55e; }
+.interestGreen .interestValue { color: #15803d; }
+
+.interestAmber  { background: #fffbeb; border-color: #fde68a; }
+.interestAmber .interestIcon  { background: #fef3c7; color: #d97706; }
+.interestAmber .interestLabel { color: #f59e0b; }
+.interestAmber .interestValue { color: #b45309; }
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 900px) {
+  .bottomGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .interestGrid { grid-template-columns: 1fr; }
+  .metricsGrid  { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .pageTitle   { font-size: 1.3rem; }
+  .metricsGrid { grid-template-columns: 1fr; }
+  .dateChip    { font-size: 0.7rem; }
+
+  .interestCard {
+    padding: 0.875rem 1rem;
+  }
+  .interestValue { font-size: 1.05rem; }
+}

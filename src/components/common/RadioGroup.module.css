@@ -1,0 +1,4 @@
+.group  { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.option { display: flex; align-items: center; gap: 0.4rem; cursor: pointer; font-size: 0.875rem; color: #374151; }
+.input  { accent-color: #0ea5e9; }
+.label  { }

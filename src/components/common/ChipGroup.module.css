@@ -1,0 +1,5 @@
+.group { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chip  { padding: 0.3rem 0.875rem; border-radius: 9999px; border: 1px solid #e5e7eb; background: #fff; font-size: 0.8rem; cursor: pointer; color: #374151; transition: all 0.15s; }
+.chip:hover { border-color: #0ea5e9; color: #0ea5e9; }
+.active { background: #0ea5e9; color: #fff; border-color: #0ea5e9; }
+.active:hover { background: #0284c7; }

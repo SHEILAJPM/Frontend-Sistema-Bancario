@@ -1,0 +1,8 @@
+.wrapper { overflow-x: auto; border-radius: 10px; border: 1px solid #f3f4f6; }
+.table   { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.table th { padding: 0.6rem 1rem; text-align: left; font-size: 0.72rem; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.04em; background: #f9fafb; border-bottom: 1px solid #f3f4f6; }
+.row     { transition: background 0.1s; }
+.row:hover { background: #f9fafb; }
+.table td { padding: 0.75rem 1rem; border-bottom: 1px solid #f3f4f6; color: #374151; }
+.monto   { font-weight: 700; color: #15803d; }
+.obs     { color: #6b7280; font-style: italic; max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

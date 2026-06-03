@@ -1,0 +1,21 @@
+.card {
+  display: flex; align-items: flex-start; gap: 0.875rem;
+  padding: 1rem; border-radius: 10px;
+  border: 1px solid #f3f4f6;
+  background: #fff;
+  cursor: pointer; transition: box-shadow 0.15s;
+}
+.card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.07); }
+.avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: #e0f2fe; color: #0369a1;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.info    { flex: 1; min-width: 0; }
+.nombre  { font-weight: 600; font-size: 0.9rem; margin: 0 0 0.15rem; color: #111827; }
+.dni     { font-size: 0.8rem; color: #6b7280; margin: 0 0 0.25rem; }
+.detail  { font-size: 0.78rem; color: #9ca3af; display: flex; align-items: center; gap: 0.25rem; margin: 0; }
+.status  { padding: 0.2rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 600; flex-shrink: 0; }
+.activo  { background: #dcfce7; color: #15803d; }
+.inactivo { background: #f3f4f6; color: #6b7280; }

@@ -1,0 +1,55 @@
+.card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  cursor: default;
+  transition: box-shadow 0.2s;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.875rem;
+}
+
+.iconWrap {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Variantes de color */
+.sky  .iconWrap { background: var(--sky-50);   color: var(--sky-600);  }
+.blue .iconWrap { background: #eff6ff;          color: var(--blue-600); }
+.green .iconWrap{ background: var(--green-100); color: var(--green-500);}
+.amber .iconWrap{ background: var(--amber-100); color: var(--amber-500);}
+.red  .iconWrap { background: var(--red-100);   color: var(--red-500);  }
+
+.title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: var(--gray-400);
+}

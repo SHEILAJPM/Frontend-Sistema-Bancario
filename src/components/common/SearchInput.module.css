@@ -1,0 +1,14 @@
+.wrapper { position: relative; display: flex; align-items: center; }
+.icon    { position: absolute; left: 0.75rem; color: #9ca3af; pointer-events: none; }
+.input   {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.15s;
+  background: #fff;
+}
+.input:focus { border-color: #0ea5e9; box-shadow: 0 0 0 3px rgba(14,165,233,0.1); }
+.input::placeholder { color: #9ca3af; }

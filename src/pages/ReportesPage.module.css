@@ -1,0 +1,4 @@
+.page    { padding: 1.5rem; max-width: 800px; display: flex; flex-direction: column; gap: 1.25rem; }
+.filtros { display: flex; align-items: flex-end; gap: 1rem; flex-wrap: wrap; }
+.fechas  { display: flex; gap: 1rem; flex-wrap: wrap; }
+.label   { display: block; font-size: 0.82rem; font-weight: 500; color: #374151; margin-bottom: 0.25rem; }

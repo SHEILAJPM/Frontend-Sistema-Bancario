@@ -1,0 +1,7 @@
+.wrapper  { overflow-x: auto; border-radius: 10px; border: 1px solid #f3f4f6; }
+.table    { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.th       { padding: 0.75rem 1rem; text-align: left; font-size: 0.75rem; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; background: #f9fafb; border-bottom: 1px solid #f3f4f6; white-space: nowrap; }
+.tr       { transition: background 0.1s; }
+.tr:hover { background: #f9fafb; }
+.td       { padding: 0.875rem 1rem; border-bottom: 1px solid #f3f4f6; color: #111827; vertical-align: middle; }
+.tr:last-child .td { border-bottom: none; }

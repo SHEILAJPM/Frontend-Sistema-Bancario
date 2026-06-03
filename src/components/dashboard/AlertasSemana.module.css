@@ -1,0 +1,8 @@
+.lista  { display: flex; flex-direction: column; gap: 0.5rem; }
+.item   { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; border-radius: 8px; background: #f0f9ff; }
+.icon   { color: #0369a1; flex-shrink: 0; }
+.info   { flex: 1; min-width: 0; }
+.nombre { font-weight: 600; font-size: 0.85rem; margin: 0; color: #111827; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.detalle { font-size: 0.78rem; color: #6b7280; margin: 0; }
+.fecha  { font-size: 0.78rem; color: #0369a1; font-weight: 600; flex-shrink: 0; }
+.vacio  { color: #9ca3af; font-size: 0.875rem; text-align: center; padding: 1.5rem; }

@@ -1,0 +1,5 @@
+.wrapper { display: flex; flex-direction: column; gap: 0.4rem; }
+.header  { display: flex; justify-content: space-between; font-size: 0.82rem; color: #6b7280; }
+.val     { font-weight: 700; color: #374151; }
+.range   { width: 100%; height: 6px; border-radius: 9999px; outline: none; cursor: pointer; appearance: none; }
+.range::-webkit-slider-thumb { appearance: none; width: 18px; height: 18px; border-radius: 50%; background: #0ea5e9; cursor: pointer; }

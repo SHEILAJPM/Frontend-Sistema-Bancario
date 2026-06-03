@@ -1,0 +1,11 @@
+.page   { padding: 1.5rem; max-width: 900px; }
+.tabla  { background: #fff; border-radius: 12px; border: 1px solid #f3f4f6; overflow: hidden; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.table  { width: 100%; border-collapse: collapse; font-size: 0.875rem; min-width: 480px; }
+.table th { padding: 0.75rem 1rem; text-align: left; background: #f9fafb; color: #6b7280; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid #f3f4f6; }
+.table td { padding: 0.875rem 1rem; border-bottom: 1px solid #f3f4f6; color: #111827; }
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: #f9fafb; }
+
+@media (max-width: 640px) {
+  .page { padding: 1rem; }
+}

@@ -1,0 +1,14 @@
+.bar {
+  height: 52px;
+  background: #fff;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1.5rem;
+  gap: 1rem;
+}
+.user   { display: flex; align-items: center; gap: 0.4rem; font-size: 0.875rem; color: #374151; }
+.rol    { background: #e0f2fe; color: #0369a1; padding: 0.15rem 0.5rem; border-radius: 9999px; font-size: 0.7rem; font-weight: 600; }
+.logout { background: none; border: none; cursor: pointer; color: #6b7280; display: flex; padding: 0.25rem; border-radius: 6px; }
+.logout:hover { background: #fee2e2; color: #ef4444; }

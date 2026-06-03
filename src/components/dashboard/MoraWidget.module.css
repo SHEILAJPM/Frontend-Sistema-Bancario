@@ -1,0 +1,4 @@
+.widget { display: flex; align-items: center; gap: 0.875rem; padding: 1rem; background: #fef2f2; border: 1px solid #fecaca; border-radius: 10px; }
+.icon   { color: #b91c1c; flex-shrink: 0; }
+.count  { font-weight: 700; font-size: 0.9rem; color: #b91c1c; margin: 0; }
+.monto  { font-size: 0.8rem; color: #dc2626; margin: 0.15rem 0 0; }
