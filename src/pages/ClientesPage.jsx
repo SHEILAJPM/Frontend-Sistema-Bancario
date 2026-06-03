@@ -72,13 +72,14 @@ export default function ClientesPage() {
   }
 
   const handleEliminar = async (c) => {
-    if (!confirm(`¿Desactivar a ${c.nombre} ${c.apellido}?`)) return
+    if (!confirm(`¿Eliminar a ${c.nombre} ${c.apellido}?`)) return
+    setClientes(prev => prev.filter(x => x.id !== c.id))
     try {
       await eliminarCliente(c.id)
-      toast.success('Cliente desactivado')
-      cargar()
+      toast.success('Cliente eliminado')
     } catch (err) {
-      toast.error(err.response?.data?.detail ?? 'No se pudo desactivar el cliente')
+      setClientes(prev => [...prev, c])
+      toast.error(err.response?.data?.detail ?? 'No se pudo eliminar el cliente')
     }
   }
 
@@ -115,7 +116,7 @@ export default function ClientesPage() {
         className={styles.tableCard}
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35 }}
+        transition={{ duration: 0.18 }}
       >
         {loading ? (
           <div className={styles.loadingRows}>

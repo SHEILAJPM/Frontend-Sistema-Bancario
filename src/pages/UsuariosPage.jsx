@@ -22,11 +22,14 @@ export default function UsuariosPage() {
   useEffect(() => { cargar() }, [])
 
   const handleToggle = async (id) => {
+    setUsuarios(prev => prev.map(u => u.id === id ? { ...u, activo: !u.activo } : u))
     try {
       await toggleActivo(id)
       toast.success('Estado actualizado')
-      cargar()
-    } catch { toast.error('No se pudo cambiar el estado') }
+    } catch {
+      setUsuarios(prev => prev.map(u => u.id === id ? { ...u, activo: !u.activo } : u))
+      toast.error('No se pudo cambiar el estado')
+    }
   }
 
   if (loading) return <Spinner />
